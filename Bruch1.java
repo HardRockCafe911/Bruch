@@ -1,5 +1,7 @@
-package Bruch;
+// Ich hoffe das ist genug um sie zufrieden zustellen 
 
+package Bruch;
+// Attribute  
 public class Bruch1 {
 	
 		int zaehler;
@@ -8,9 +10,9 @@ public class Bruch1 {
 		 {				
 				System.out.print(zaehler +"/"+ nenner);
 			}
-		void kuerzen()
+		void kuerzen() // Methode: kopf der Methode
 		{
-			int m, n, r;
+			int m, n, r;// rumpf der Methode
 			m = zaehler;
 			n = nenner;
 			r = m % n;
@@ -33,4 +35,9 @@ public class Bruch1 {
 			zaehler *= a;
 			nenner *= a;
 		}
+		void multipiziere (Bruch1 m){// mulitiplikation Referenztypen als Parameter
+			zaehler *= m.zaehler;
+			nenner *= m.nenner;
+		}
+		
 }
